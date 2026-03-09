@@ -84,7 +84,4 @@ CNN achieved the best performance on the MNIST dataset.
 ## Model Performance
 
 ### Accuracy Curve
-![Accuracy](images/images.png)
-
-### Confusion Matrix
-![Confusion Matrix](images/confusion_matrix.png)
+![Accuracy](images/accuracy_plot.png)
