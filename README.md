@@ -1,87 +1,83 @@
-# MNIST Handwritten Digit Classifier
+# Handwritten Digit Classification using Deep Learning
 
-This project builds and compares multiple deep learning models for handwritten digit classification using the MNIST dataset.
+This project builds and compares multiple deep learning models to classify handwritten digits from the MNIST dataset. 
 
-The goal is to explore how architecture and regularization affect model performance.
+The project explores three architectures:
+- Multilayer Perceptron (MLP)
+- MLP with Dropout Regularization
+- Convolutional Neural Network (CNN)
 
----
-
-## Models Implemented
-
-• Multilayer Perceptron (MLP)
-
-• MLP with Dropout Regularization
-
-• Convolutional Neural Network (CNN)
-
----
+A Streamlit web application is included to allow users to upload an image and get a digit prediction.
 
 ## Dataset
 
-MNIST dataset
+The MNIST dataset contains 70,000 grayscale images of handwritten digits (0–9).  
+Each image is 28×28 pixels.
 
-70,000 grayscale images of handwritten digits (28x28 pixels).
+The dataset is split into:
 
----
+- Training set
+- Development (validation) set
+- Test set
 
-## Training Pipeline
+## Models Implemented
 
-1. Load dataset
-2. Train / Dev / Test split
-3. Normalize images
-4. Train multiple architectures
-5. Evaluate performance
+### 1. Multilayer Perceptron (MLP)
+Fully connected neural network using dense layers.
 
----
+### 2. MLP with Dropout Regularization
+Dropout layers added to reduce overfitting.
 
-## Evaluation Metrics
+### 3. Convolutional Neural Network (CNN)
+Uses convolution and pooling layers for better spatial feature extraction.
 
-Accuracy  
-Confusion Matrix  
-Precision / Recall / F1-score
+## Model Performance
 
----
+### Accuracy Plot
+![Accuracy Plot](images/accuracy_plot.png)
 
-## Best Model
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
 
-CNN achieved the highest accuracy on the MNIST test dataset.
+## Project Structure
 
----
+mnist-digit-classifier
+│
+├── images
+│   ├── accuracy_plot.png
+│   └── confusion_matrix.png
+│
+├── models
+│   └── best_cnn.keras
+│
+├── notebooks
+│   ├── Handwritten Digit Classification using Deep Learning.ipynb
+│   └── MNIST_MLP_Regularization_Comparison.ipynb
+│
+├── src
+│   ├── app.py
+│   └── handwritten.py
+│
+└── README.md
 
-## Run the Streamlit App
+## Installation
+
+Clone the repository
+
+git clone https://github.com/rishikeshbeliya/mnist-digit-classifier.git
+
+cd mnist-digit-classifier
 
 Install dependencies
 
 pip install -r requirements.txt
-
-Run the app
-
-streamlit run app.py
-
-Upload an image of a handwritten digit and the model predicts the number.
-
----
+streamlit run src/app.py
 
 ## Technologies Used
 
-Python  
-TensorFlow / Keras  
-NumPy  
-Scikit-learn  
-Matplotlib  
-Streamlit
-
-## Results
-
-| Model | Test Accuracy |
-|------|---------------|
-| MLP | 97% |
-| MLP + Dropout | 98% |
-| CNN | 99% |
-
-CNN achieved the best performance on the MNIST dataset.
-
-## Model Performance
-
-### Accuracy Curve
-![Accuracy](images/accuracy_plot.png)
+- Python
+- TensorFlow / Keras
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Streamlit
