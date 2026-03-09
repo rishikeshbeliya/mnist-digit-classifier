@@ -39,27 +39,6 @@ Uses convolution and pooling layers for better spatial feature extraction.
 ### Confusion Matrix
 ![Confusion Matrix](images/confusion_matrix.png)
 
-## Project Structure
-
-mnist-digit-classifier
-│
-├── images
-│   ├── accuracy_plot.png
-│   └── confusion_matrix.png
-│
-├── models
-│   └── best_cnn.keras
-│
-├── notebooks
-│   ├── Handwritten Digit Classification using Deep Learning.ipynb
-│   └── MNIST_MLP_Regularization_Comparison.ipynb
-│
-├── src
-│   ├── app.py
-│   └── handwritten.py
-│
-└── README.md
-
 ## Installation
 
 Clone the repository
