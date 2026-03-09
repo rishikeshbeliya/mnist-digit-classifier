@@ -80,3 +80,11 @@ Streamlit
 | CNN | 99% |
 
 CNN achieved the best performance on the MNIST dataset.
+
+## Model Performance
+
+### Accuracy Curve
+![Accuracy](images/images.png)
+
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
