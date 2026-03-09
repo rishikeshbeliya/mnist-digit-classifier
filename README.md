@@ -70,3 +70,13 @@ NumPy
 Scikit-learn  
 Matplotlib  
 Streamlit
+
+## Results
+
+| Model | Test Accuracy |
+|------|---------------|
+| MLP | 97% |
+| MLP + Dropout | 98% |
+| CNN | 99% |
+
+CNN achieved the best performance on the MNIST dataset.
