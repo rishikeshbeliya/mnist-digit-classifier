@@ -4,7 +4,7 @@ import tensorflow as tf
 from PIL import Image
 
 # Load model
-model = tf.keras.models.load_model("models/best_cnn.keras")
+model = tf.keras.models.load_model("../models/best_cnn.keras")
 st.title("Handwritten Digit Classifier")
 
 uploaded_file = st.file_uploader("Upload a digit image", type=["png", "jpg", "jpeg"])
